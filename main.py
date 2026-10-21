@@ -115,22 +115,7 @@ class Message(object):
         shift_dict = {alphabet[i]: shifted_alphabet[i] for i in range(len(alphabet))}
        
         return shift_dict
-       
-        '''
-        keys_for_lowercase = list(string.ascii_lowercase)
-        values_for_lowercase = list(string.ascii_lowercase)
-        shift_lower_values = values_for_lowercase[shift:] + values_for_lowercase[:shift]
         
-        keys_for_uppercase = list(string.ascii_uppercase)
-        values_for_uppercase = list(string.ascii_uppercase)
-        shift_upper_values = values_for_uppercase[shift:] + values_for_uppercase[:shift]
-        
-        keys_in_dict = keys_for_lowercase + keys_for_uppercase
-        values_in_dict = shift_lower_values + shift_upper_values
-        
-        self.shifted_dict = dict(zip(keys_in_dict, values_in_dict))
-        return self.shifted_dict
-        '''   
 
     def apply_shift(self, shift):
         '''
