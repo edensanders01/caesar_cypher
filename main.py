@@ -53,7 +53,7 @@ def get_story_string():
     f.close()
     return story
 
-WORDLIST_FILENAME = "/Users/upcyc/Desktop/MIT 600.1x Files/ps6/words.txt"
+WORDLIST_FILENAME = "words.txt"
 
 class Message(object):
     ### DO NOT MODIFY THIS METHOD ###
